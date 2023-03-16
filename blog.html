@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,21 +9,40 @@
     <!-- tailwind cdn  -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
     <h1>Hello World</h1>
-    <div>
-        <div>
-            <h1>Difference between map(), filter(), find(), forEach().</h1>
-            <h4>Ans...</h4>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 w-9/12 mx-auto my-5">
+        <div class="bg-green-600 p-5 rounded text-white">
+            <h1 class="text-2xl">Difference between map(), filter(), find(), forEach().</h1> <br>
+            <h4><b>map()</b> executes the same code on every element in an array and returns a new array with the updated
+                elements.</h4>
+            <h4 class="mt-2"><b>filter()</b> checks every element in an array to see if it meets the condition and returns a new array with
+                the
+                elements that satisfied the condition.</h4>
+            <h4 class="mt-2"><b>find()</b> returns first element of the array that satisfies the condition specified in the callback
+                function.</h4>
+            <h4 class="mt-2"><b>forEach()</b> is used to execute the same code on every element in an array but does not change the array
+                and it returns undefined.</h4>
         </div>
-        <div>
-            <h1>Difference between sessionStorage, localStorage, cookies</h1>
-            <h4>Ans...</h4>
+        <div class="bg-green-600 p-5 rounded text-white">
+            <h1 class="text-2xl">Difference between sessionStorage, localStorage, cookies</h1> <br>
+            <h4><b>Local storage :</b> data is not deleted when the browder is closed. Local storage is useful for storing data that the user will need to access later.</h4>
+            <h4 class="mt-3"><b>Session storage:</b> only stored for the current session. Data will be deleted when the user closes the browser.</h4>
+            <h4 class="mt-3"><b>Cookies :</b> cookie is a small piece of data that is stored on the browser. Cookies are used to store information about the user such as their name, password, and preferences.</h4>
         </div>
-        <div>
-            <h1>what is event loop?</h1>
-            <h4>Ans...</h4>
+        <div class="bg-green-600 p-5 rounded text-white">
+            <h1 class="text-2xl">what is event loop?</h1> <br>
+            <h4>Event loop is a model based event which executes the javaScript code. There have lot's of sections, such as like:</h4>
+            <h4 class="mt-2"><b>stack :</b> Function calls form a stack of frames.</h4>
+            <h4 class="mt-2"><b>heap :</b> Objects are allocated in a heap which is just a name to denote a large region of memory.</h4>
+            <h4 class="mt-2"><b>Queue :</b> JavaScript runtime uses a message queue, which is a list of messages to be processed. Each message has an associated function that gets called to handle the message.</h4>
+            <h4 class="mt-2"><b>webAPI :</b> The Web API calls are added to the Web API Container from the Call Stack. 
+                Web API calls remain inside the Web API Container until an action is triggered. 
+                The action could be a click event or HTTP request, or a timer finishes its set time.</h4>
+            <h4 class="mt-2">Event loop will never block the code.</h4>
         </div>
     </div>
 </body>
+
 </html>
